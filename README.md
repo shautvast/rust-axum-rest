@@ -9,9 +9,9 @@
 * /posts returns all posts
 * /posts/{id} returns a post
 
-| .env |
-| DATABASE_URL=postgres://postgres:...@localhost:5432/rust-axum-rest-api |
-| MAX_DB_CONNECTIONS=5 |
-| BIND_HOST=0.0.0.0:5001 |
-| JWT_SECRET=... |
-| ALLOWED_ORIGINS= |
+| Environment Variable | Description                                      | Example Value                                    |
+|----------------------|--------------------------------------------------|--------------------------------------------------|
+| DATABASE_URL         | Postgres database connection URL                 | postgres://postgres:password@localhost:5432/mydb |
+| MAX_DB_CONNECTIONS   | Maximum number of DB connections                 | 5                                                |
+| BIND_HOST            | Address and port to bind the server              | 0.0.0.0:5001                                     |
+| JWT_SECRET           | Secret used for signing JWT tokens               | supersecretkey                                   |
